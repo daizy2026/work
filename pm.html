@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>张晓迪 - 产品经理作品集</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            position: relative;
+        }
+        
+        body {
+            min-height: 100vh;
+        }
+        
+        .hero-section {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            margin: 0;
+            overflow: hidden;
+            background: url('src/pm/bg_compressed.png') center/cover no-repeat;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(185, 199, 255, 0.3), rgba(0,0,0,0.5));
+        }
+        
+        .hero-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10%;
+            color: white;
+            z-index: 2;
+        }
+        
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero-content .title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-content .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .hero-content .contact-item {
+            font-size: 1.2rem;
+            color: #00FFFF;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .note {
+            position: absolute;
+            bottom: 1rem;
+            right: 10%;
+            font-size: 0.9rem;
+            color: white;
+            z-index: 1;
+        }
+        
+        .section {
+            height: auto;
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .footer-section {
+            padding: 4rem 0;
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        .footer-content {
+            text-align: center;
+            padding: 0 10%;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-content .quote,
+        .footer-content .contact-links {
+            margin-bottom: 2rem;
+        }
+        
+        .footer-content .quote {
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+        
+        .footer-content .contact-links span {
+            color: #026EF9;
+            text-decoration: underline;
+            margin: 0 0.5rem;
+            cursor: pointer;
+        }
+        
+        .footer-content .disclaimer {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content .title {
+                font-size: 1.2rem;
+            }
+            
+            .hero-content .contact-item {
+                font-size: 1rem;
+            }
+            
+            .note {
+                font-size: 0.8rem;
+                bottom: 1rem;
+            }
+            
+            .footer-content .quote {
+                font-size: 1.2rem;
+            }
+            
+            .footer-content .contact-links {
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-content .title {
+                font-size: 1rem;
+            }
+            
+            .hero-content .contact-item {
+                font-size: 0.9rem;
+            }
+            
+            .note {
+                font-size: 0.7rem;
+                bottom: 0.5rem;
+            }
+            
+            .footer-content .quote {
+                font-size: 1rem;
+            }
+            
+            .footer-content .contact-links {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>张晓迪</h1>
+            <div class="title">产品经理 作品集</div>
+            <div class="contact-info">
+                <div class="contact-item" onclick="copyToClipboard('18801613257')">18801613257</div>
+                <div class="contact-item" onclick="copyToClipboard('xiaodizhangssspu@163.com')">xiaodizhangssspu@163.com</div>
+            </div>
+        </div>
+        <div class="note">! 仅用于面试参考，勿作他用</div>
+    </div>
+    
+    <div class="section">
+        <img loading="lazy" src="src/pm/pm_02_compressed.png" alt="作品 2">
+    </div>
+    
+    <div class="section">
+        <img loading="lazy" src="src/pm/pm_03_compressed.png" alt="作品 3">
+    </div>
+    
+    <div class="section">
+        <img loading="lazy" src="src/pm/pm_04_compressed.png" alt="作品 4">
+    </div>
+    
+    <div class="section">
+        <img loading="lazy" src="src/pm/pm_05_compressed.png" alt="作品 5">
+    </div>
+    
+    <div class="footer-section">
+        <div class="footer-content">
+            <div class="quote">「感谢您的浏览 · 期待与您对话」</div>
+            <div class="contact-links">
+                <span onclick="copyToClipboard('18801613257')">18801613257</span> / 
+                <span onclick="copyToClipboard('xiaodizhangssspu@163.com')">xiaodizhangssspu@163.com</span>
+            </div>
+            <div class="disclaimer">! 仅用于面试参考，勿作他用</div>
+        </div>
+    </div>
+    
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    console.log('已复制到剪贴板:', text);
+                })
+                .catch(err => {
+                    console.error('复制失败:', err);
+                });
+        }
+        
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
